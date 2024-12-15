@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GK Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(180,206,216,1) 31%, rgba(218,185,217,1) 50%, rgba(184,186,218,1) 68%, rgba(189,181,219,1) 77%, rgba(148,187,233,1) 100%);
+        }
+        .a:hover {
+            background-color: green;
+            color: white;
+            border-color: black;
+        }
+        .contentt .a {
+            display: inline-block;
+            color: black;
+            font-size: 24px;
+            padding: 10px 40px;
+            margin-top: 20px;
+            transition: 0.5s;
+            border: green 2px solid;
+        }
+        .previous:hover {
+            background-color: red;
+        }
+        .submit {
+            border: blue 2px solid;
+            padding-left: 5%;
+        }
+        .submit:hover {
+            background-color: blue;
+        }
+        .timer {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="timer" id="timer">Time left: 03:00</div>
+        <div class="question-contain">
+            <h1 class="num">Question no: 1</h1>
+            <div class="question">
+                <h3>Name the biggest continent in the world?</h3>
+            </div>
+            <div class="answer">
+                <div class="ans1"><input type="radio" name="1.quiz" value="Europe"><label>Europe</label><br></div>
+                <div class="ans1"><input type="radio" name="1.quiz" value="Asia"><label>Asia</label><br></div>
+                <div class="ans1"><input type="radio" name="1.quiz" value="Australia"><label>Australia</label><br></div>
+                <div class="ans1"><input type="radio" name="1.quiz" value="North America"><label>North America</label><br></div>
+                <div class="contentt">
+                    <button class="a next">Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="question-contain" style="display: none;">
+            <h1 class="num">Question no: 2</h1>
+            <div class="question">
+                <h3>When was GST first launched?</h3>
+            </div>
+            <div class="answer">
+                <div class="ans1"><input type="radio" name="2.quiz" value="2016"><label>2016</label><br></div>
+                <div class="ans1"><input type="radio" name="2.quiz" value="2017"><label>2017</label><br></div>
+                <div class="ans1"><input type="radio" name="2.quiz" value="2018"><label>2018</label><br></div>
+                <div class="ans1"><input type="radio" name="2.quiz" value="2019"><label>2019</label><br></div>
+                <div class="contentt">
+                    <button class="a next">Next</button>
+                    <button class="a previous" style="margin-left: 2%; border: 2px red solid;">Previous</button>
+                </div>
+            </div>
+        </div>
+        <div class="question-contain" style="display: none;">
+            <h1 class="num">Question no: 3</h1>
+            <div class="question">
+                <h3>Who is the father of our Nation?</h3>
+            </div>
+            <div class="answer">
+                <div class="ans1"><input type="radio" name="3.quiz" value="Narendra Modi"><label>Narendra Modi</label><br></div>
+                <div class="ans1"><input type="radio" name="3.quiz" value="Mahatma Gandhi"><label>Mahatma Gandhi</label><br></div>
+                <div class="ans1"><input type="radio" name="3.quiz" value="Jawaharlal Nehru"><label>Jawaharlal Nehru</label><br></div>
+                <div class="ans1"><input type="radio" name="3.quiz" value="Sardar Vallabhabhai Patel"><label>Sardar Vallabhabhai Patel</label><br></div>
+                <div class="contentt">
+                    <button class="a next">Next</button>
+                    <button class="a previous" style="margin-left: 2%; border: 2px red solid;">Previous</button>
+                </div>
+            </div>
+        </div>
+        <div class="question-contain" style="display: none;">
+            <h1 class="num">Question no: 4</h1>
+            <div class="question">
+                <h3>Who is the God of cricket?</h3>
+            </div>
+            <div class="answer">
+                <div class="ans1"><input type="radio" name="4.quiz" value="Kapil Dev"><label>Kapil Dev</label><br></div>
+                <div class="ans1"><input type="radio" name="4.quiz" value="Kedar Jadhav"><label>Kedar Jadhav</label><br></div>
+                <div class="ans1"><input type="radio" name="4.quiz" value="Sachin Tendulkar"><label>Sachin Tendulkar</label><br></div>
+                <div class="ans1"><input type="radio" name="4.quiz" value="Virat Kohli"><label>Virat Kohli</label><br></div>
+                <div class="contentt">
+                    <button class="a next">Next</button>
+                    <button class="a previous" style="margin-left: 2%; border: 2px red solid;">Previous</button>
+                </div>
+            </div>
+        </div>
+        <div class="question-contain" style="display: none;">
+            <h1 class="num">Question no: 5</h1>
+            <div class="question">
+                <h3>World no 1 Boxer of all time</h3>
+            </div>
+            <div class="answer">
+                <div class="ans1"><input type="radio" name="5.quiz" value="Mike Tyson"><label>Mike Tyson</label><br></div>
+                <div class="ans1"><input type="radio" name="5.quiz" value="Muhammad Ali"><label>Muhammad Ali</label><br></div>
+                <div class="ans1"><input type="radio" name="5.quiz" value="Jack Paul"><label>Jack Paul</label><br></div>
+                <div class="ans1"><input type="radio" name="5.quiz" value="Joe Frazier"><label>Joe Frazier</label><br></div>
+                <div class="contentt">
+                    <button class="a next">Next</button>
+                    <button class="a previous" style="margin-left: 2%; border: 2px red solid;">Previous</button>
+                </div>
+            </div>
+        </div>
+        <div class="question-contain" style="display: none;">
+            <h1 class="num">Question no: 6</h1>
+            <div class="question">
+                <h3>Which is the highest literacy state in India?</h3>
+            </div>
+            <div class="answer">
+                <div class="ans1"><input type="radio" name="6.quiz" value="Kerala"><label>Kerala</label><br></div>
+                <div class="ans1"><input type="radio" name="6.quiz" value="Tamil Nadu"><label>Tamil Nadu</label><br></div>
+                <div class="ans1"><input type="radio" name="6.quiz" value="Maharashtra"><label>Maharashtra</label><br></div>
+                <div class="ans1"><input type="radio" name="6.quiz" value="Delhi"><label>Delhi</label><br></div>
+                <div class="contentt">
+                    <button class="a next">Next</button>
+                    <button class="a previous" style="margin-left: 2%; border: 2px red solid;">Previous</button>
+                </div>
+            </div>
+        </div>
+        <div class="question-contain" style="display: none;">
+            <h1 class="num">Question no: 7</h1>
+            <div class="question">
+                <h3>What is the capital of Japan?</h3>
+            </div>
+            <div class="answer">
+                <div class="ans1"><input type="radio" name="7.quiz" value="Osaka"><label>Osaka</label><br></div>
+                <div class="ans1"><input type="radio" name="7.quiz" value="Kyoto"><label>Kyoto</label><br></div>
+                <div class="ans1"><input type="radio" name="7.quiz" value="Tokyo"><label>Tokyo</label><br></div>
+                <div class="ans1"><input type="radio" name="7.quiz" value="Nagoya"><label>Nagoya</label><br></div>
+                <div class="contentt">
+                    <button class="a next">Next</button>
+                    <button class="a previous" style="margin-left: 2%; border: 2px red solid;">Previous</button>
+                </div>
+            </div>
+        </div>
+
+            <div class="question-contain" style="display: none;">
+                <h1 class="num"> Question no:8</h1>
+                <div class="question">
+                <h3>What is the national fruit of India?</h3></div>
+                <div class="answer">
+                    <div class="ans1"> <input type="radio" name="8.quiz" value="Jack Fruit"><label>Jack Fruit</label><br></div>
+                    <div class="ans1"> <input type="radio" name="8.quiz" value="Guava"><label>Guava</label><br></div>
+                    <div class="ans1"> <input type="radio" name="8.quiz" value="Orange"><label>Orange</label><br></div>
+                    <div class="ans1"> <input type="radio" name="8.quiz" value="Mango"><label>Mango</label><br></div>
+                    <div class="contentt">
+                    <button class="a next">Next</button><button class="a previous" style="margin-left: 2%;border:2px red solid; ">Previous</button>
+                    </div>
+                    
+               
+        
+                </div>
+        
+            </div>
+            <div class="question-contain" style="display: none;">
+                <h1 class="num"> Question no:9</h1>
+                <div class="question">
+                <h3>Who is known as Father of Indian Constitution?</h3></div>
+                <div class="answer">
+                    <div class="ans1"> <input type="radio" name="9.quiz" value="Dr.B.R.Ambedkar"><label>Dr.B.R.Ambedkar</label><br></div>
+                    <div class="ans1"> <input type="radio" name="9.quiz" value="Jawaharlal Nehru"><label>Jawaharlal Nehru</label><br></div>
+                    <div class="ans1"> <input type="radio" name="9.quiz" value="Subhas Chandra Bose"><label>Subhas Chandra Bose</label><br></div>
+                    <div class="ans1"> <input type="radio" name="9.quiz" value="Mahatma Gandhi"><label>Mahatma Gandhi</label><br></div>
+                    <div class="contentt">
+                    <button class="a next">Next</button><button class="a previous" style="margin-left: 2%;border:2px red solid; ">Previous</button>
+                    </div>
+                    
+               
+        
+                </div>
+        
+            </div>
+            <div class="question-contain" style="display: none;">
+                <h1 class="num"> Question no:10</h1>
+                <div class="question">
+                <h3>Who is the current President of India</h3></div>
+                <div class="answer">
+                    <div class="ans1"> <input type="radio" name="10.quiz" value="Manmohan Singh"><label>Manmohan singh</label><br></div>
+                    <div class="ans1"> <input type="radio" name="10.quiz" value="Narendra Modi"><label>Narendra Modi</label><br></div>
+                    <div class="ans1"> <input type="radio" name="10.quiz" value="Draupadi Murmu"><label>Draupadi Murmu</label><br></div>
+                    <div class="ans1"> <input type="radio" name="10.quiz" value="Stalin"><label>Stalin</label><br></div>
+                    <div class="contentt">
+                    <button class="a previous" style="margin-left: 1%;border:2px red solid; ">Previous</button><button class="a submit" style="border: blue 2px solid; margin-left: 2%;">Submit</button>
+                    </div>
+                    
+               
+        
+                </div>
+        
+            </div>
+            </section>
+            
+            <script src="quiz.js"></script>
+        </body>
+        </html>
+        

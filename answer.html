@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets welcome</title>
+    <link rel="stylesheet" href="stylee.css" />
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  .hero {
+    width: 100%;
+    height:100%;
+    background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+
+    
+  }
+  
+  .content {
+    align-items: center;
+    padding-top: 2%;
+    text-align: center;
+    
+  }
+  
+  .content h1 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+  }
+  
+  .content h1:hover {
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+  }
+  
+  .content a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid white;
+    padding: 14px 50px;
+    margin-top: 20px;
+    transition: 0.5s;
+  
+   
+  }
+  
+  .content a:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  .back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .mass{
+    display: flex;
+    gap:5%;
+    justify-content: left;
+
+  }
+  h3{
+    color:green
+  }
+  p{
+    color:ghostwhite;
+   
+    
+  }
+  .q ,.q3{
+    border-bottom: 1px white solid;
+    padding: 2% 0;
+  }
+  .qusetion-10{
+    border-bottom: none;
+
+  }
+
+  .mass .q2{
+    border-left:white solid 2px;
+
+  }
+  @media screen and (max-width:800px) {
+    .content h1{
+      font-size: 18px;
+      font-weight: 250;
+      transition: 0.5s;
+    }
+
+    p{
+        font-size: 10px;
+    }
+    .ab:hover{
+        background-color: yellow;
+
+    }
+    h3{
+        font-size: 8px;
+    }
+    h2{
+        font-size: 10px;
+    }
+  .content a{
+    margin-bottom: 17%;
+  }
+    
+
+    
+  }
+  
+  @media (min-aspect-ratio: 16/9) {
+    .back-video {
+      width: 100%;
+      height: max-content;
+    }
+  }
+  
+  @media (max-aspect-ratio: 16/9) {
+    .back-video {
+      width: auto;
+      height: max-content;
+    }
+  }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <video autoplay loop muted plays-inline class="back-video">
+    
+        <source src="assets/video.mp4" />
+      </video>
+      
+
+      <section class="content">
+        <h1>Answers</h1>
+        <div class="mass">
+        <div class="5qustion">
+        <div class="qustion1 q">
+        
+        <h2>
+            Qustion no:1
+
+        </h2>
+        <p>
+            Name the biggest continent in the world?
+
+        </p>
+        <h3>
+            Asia
+
+
+        </h3>
+    </div>
+        <div class="qustion-2 q">
+            <h2>Qustion no:2
+
+            </h2>
+            <p>
+                When was GST first launched?
+            </p>
+            <h3>
+                2017
+    
+            </h3>
+
+        </div>
+        <div class="qustion-3 q">
+            <h2>Qustion no:3
+
+            </h2>
+            <p>Who is the father of our Nation?
+            </p>
+            <h3>Mahatma Gandhi
+
+    
+            </h3>
+
+        </div>
+        <div class="qustion-4 q">
+            <h2>
+                Question no: 4
+
+            </h2>
+            <p>Who is the God of cricket?
+            </p>
+            <h3>
+                Sachin Tendulkar
+    
+            </h3>
+
+        </div>        <div class="qustion-5 q">
+            <h2>
+                Question no: 5
+
+            </h2>
+            <p>World no 1 Boxer of all time
+            </p>
+            <h3>
+                Muhammad Ali
+    
+            </h3>
+
+        </div>   </div>
+        <div class="10qustion q">
+        
+        <div class="qustion-6 q3 q2">
+            <h2>
+                Question no: 6
+            </h2>
+            <p>Which is the highest literacy state in India
+            </p>
+            <h3>
+                Kerala
+            </h3>
+
+        </div>        <div class="qustion-7 q3 q2">
+            <h2>Question no: 7
+
+            </h2>
+            <p>What is the capital of Japan?
+            </p>
+            <h3>
+                Tokyo
+    
+            </h3>
+
+        </div>        <div class="qustion-8 q3 q2">
+            <h2> Question no:8
+
+            </h2>
+            <p>What is the national fruit of India?
+            </p>
+            <h3>Mango
+    
+            </h3>
+
+        </div>        <div class="qustion-9 q3 q2">
+            <h2>Question no:9
+
+            </h2>
+            <p>Who is known as Father of Indian Constitution?
+            </p>
+            <h3>Dr.B.R.Ambedkar
+    
+            </h3>
+
+        </div>
+        <div class="qustion-10  q2">
+            <h2> Question no:10
+
+            </h2>
+            <p>Who is the current President of India
+            </p>
+            <h3>
+                Draupadi Murmu
+    
+            </h3>
+
+        </div>
+    </div>
+</div>
+    <div style="display: flex; justify-content: space-around;">
+        <a href="login.html">Return Home</a>
+        <a class="ab" href="result.html">Back</a></div>
+      </section>
+    </section>
+<body>
+    
+</body>
+</html>
